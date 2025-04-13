@@ -111,6 +111,10 @@ _p4_products_count.png_
 
 ---
 
+SELECT customer_id, COUNT(order_id) AS order_count, AVG(total_amount) AS avg_amount
+FROM orders
+GROUP BY customer_id;
+
 ```sql
 
 ```
