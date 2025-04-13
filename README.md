@@ -15,8 +15,8 @@ SQL запити:
 SELECT * FROM lection_them3.products;
 ```
 
-![p1_all_data_products.png](./p1_all_data_products.png)
 _p1_all_data_products.png_
+![p1_all_data_products.png](./p1_all_data_products.png)
 
 ---
 
@@ -24,8 +24,8 @@ _p1_all_data_products.png_
 SELECT name, phone FROM lection_them3.shippers;
 ```
 
-![p1_query_to_shippers.png](./p1_query_to_shippers.png)
 _p1_query_to_shippers.png_
+![p1_query_to_shippers.png](./p1_query_to_shippers.png)
 
 ---
 
@@ -40,8 +40,8 @@ _p1_query_to_shippers.png_
 SELECT AVG(price) AS average_price FROM lection_them3.products;
 ```
 
-![p2_average_price.png](./p2_average_price.png)
 _p2_average_price.png_
+![p2_average_price.png](./p2_average_price.png)
 
 ---
 
@@ -50,59 +50,71 @@ _p2_average_price.png_
 SELECT MAX(price) AS max_price FROM lection_them3.products;
 ```
 
-![p2_max_price.png](./p2_max_price.png)
 _p2_max_price.png_
+![p2_max_price.png](./p2_max_price.png)
 
 ---
 
-- ```sql
-  -- MIN
-  SELECT MIN(price) AS min_price FROM lection_them3.products;
-  ```
-  ![p2_min_price.png](./p2_min_price.png)
-  _p2_min_price.png_
+```sql
+-- MIN
+SELECT MIN(price) AS min_price FROM lection_them3.products;
+```
+
+_p2_min_price.png_
+![p2_min_price.png](./p2_min_price.png)
+
+---
 
 ### Завдання 3:
 
-- > Напишіть SQL команду, за допомогою якої можна обрати унікальні значення колонок category_id та price таблиці products. Оберіть порядок виведення на екран за спаданням значення price та виберіть тільки 10 рядків.
+> Напишіть SQL команду, за допомогою якої можна обрати унікальні значення колонок category_id та price таблиці products. Оберіть порядок виведення на екран за спаданням значення price та виберіть тільки 10 рядків.
 
-- ```sql
-  SELECT DISTINCT
-      category_id, price
-  FROM
-      lection_them3.products
-  ORDER BY price
-  LIMIT 10;
-  ```
+---
 
-- **Screenshot:**
+```sql
+SELECT DISTINCT
+    category_id, price
+FROM
+    lection_them3.products
+ORDER BY price
+LIMIT 10;
+```
 
-  - p3_distinct_price.png
+_p3_distinct_price.png_
+![p3_distinct_price.png](./p3_distinct_price.png)
 
-    ![p3_distinct_price.png](./p3_distinct_price.png)
+---
 
 ### Завдання 4:
 
-- > Напишіть SQL команду, за допомогою якої можна знайти кількість продуктів (рядків), які знаходиться в цінових межах від 20 до 100.
+> Напишіть SQL команду, за допомогою якої можна знайти кількість продуктів (рядків), які знаходиться в цінових межах від 20 до 100.
 
-- ```sql
-  SELECT
-    COUNT(*) AS products_count
-  FROM
-      lection_them3.products
-  WHERE
-      price > 20 AND price < 100;
-  ```
+---
 
-- **Screenshot:**
-  - p4_products_count.png
+```sql
+SELECT
+COUNT(*) AS products_count
+FROM
+    lection_them3.products
+WHERE
+    price > 20 AND price < 100;
+```
+
+_p4_products_count.png_
+![p4_products_count.png](./p4_products_count.png)
+
+---
 
 ### Завдання 5:
 
-- > Напишіть SQL команду, за допомогою якої можна знайти кількість продуктів (рядків) та середню ціну (price) у кожного постачальника (supplier_id).
+> Напишіть SQL команду, за допомогою якої можна знайти кількість продуктів (рядків) та середню ціну (price) у кожного постачальника (supplier_id).
 
-- ```sql
+---
 
-  ```
+```sql
 
-- **Screenshot:** p5\_
+```
+
+\_p5\_
+
+---
