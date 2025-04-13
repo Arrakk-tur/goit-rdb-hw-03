@@ -56,7 +56,10 @@ SQL запити:
   ```
 
 - **Screenshot:**
-  - p3_distinct_price.png
+
+  - _p3_distinct_price.png_
+
+    ![](./p3_distinct_price.png "p3_distinct_price.png")
 
 ### Завдання 4:
 
@@ -68,7 +71,7 @@ SQL запити:
   FROM
       lection_them3.products
   WHERE
-      price > 40 AND price < 100;
+      price > 20 AND price < 100;
   ```
 
 - **Screenshot:**
