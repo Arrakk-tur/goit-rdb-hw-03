@@ -63,10 +63,16 @@ SQL запити:
 - > Напишіть SQL команду, за допомогою якої можна знайти кількість продуктів (рядків), які знаходиться в цінових межах від 20 до 100.
 
 - ```sql
-
+  SELECT
+    COUNT(*) AS products_count
+  FROM
+      lection_them3.products
+  WHERE
+      price > 40 AND price < 100;
   ```
 
-- **Screenshot:** p4\_
+- **Screenshot:**
+  - p4_products_count.png
 
 ### Завдання 5:
 
