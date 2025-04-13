@@ -4,43 +4,63 @@ SQL запити:
 
 ### Завдання 1:
 
-- > "Напишіть SQL команду, за допомогою якої можна:
-  >
-  > - вибрати всі стовпчики (За допомогою wildcard "\*") з таблиці products;
-  > - вибрати тільки стовпчики name, phone з таблиці shippers"
+> "Напишіть SQL команду, за допомогою якої можна:
+>
+> - вибрати всі стовпчики (За допомогою wildcard "\*") з таблиці products;
+> - вибрати тільки стовпчики name, phone з таблиці shippers"
 
-- ```sql
-  SELECT * FROM lection_them3.products;
-  ```
-- ```sql
-  SELECT name, phone FROM lection_them3.shippers;
-  ```
+---
 
-- **Screenshot:**
-  - p1_all_data_products.png
-  - p1_query_to_shippers.png
+```sql
+SELECT * FROM lection_them3.products;
+```
+
+![p1_all_data_products.png](./p1_all_data_products.png)
+_p1_all_data_products.png_
+
+---
+
+```sql
+SELECT name, phone FROM lection_them3.shippers;
+```
+
+![p1_query_to_shippers.png](./p1_query_to_shippers.png)
+_p1_query_to_shippers.png_
+
+---
 
 ### Завдання 2:
 
-- > Напишіть SQL команду, за допомогою якої можна знайти середнє, максимальне та мінімальне значення стовпчика price таблички products
+> Напишіть SQL команду, за допомогою якої можна знайти середнє, максимальне та мінімальне значення стовпчика price таблички products
 
-- ```sql
-  -- AVG
-  SELECT AVG(price) AS average_price FROM lection_them3.products;
-  ```
-- ```sql
-  -- MAX
-  SELECT MAX(price) AS max_price FROM lection_them3.products;
-  ```
+---
+
+```sql
+-- AVG
+SELECT AVG(price) AS average_price FROM lection_them3.products;
+```
+
+![p2_average_price.png](./p2_average_price.png)
+_p2_average_price.png_
+
+---
+
+```sql
+-- MAX
+SELECT MAX(price) AS max_price FROM lection_them3.products;
+```
+
+![p2_max_price.png](./p2_max_price.png)
+_p2_max_price.png_
+
+---
+
 - ```sql
   -- MIN
   SELECT MIN(price) AS min_price FROM lection_them3.products;
   ```
-
-- **Screenshot:**
-  - p2_average_price.png
-  - p2_max_price.png
-  - p2_min_price.png
+  ![p2_min_price.png](./p2_min_price.png)
+  _p2_min_price.png_
 
 ### Завдання 3:
 
@@ -57,9 +77,9 @@ SQL запити:
 
 - **Screenshot:**
 
-  - _p3_distinct_price.png_
+  - p3_distinct_price.png
 
-    ![](./p3_distinct_price.png "p3_distinct_price.png")
+    ![p3_distinct_price.png](./p3_distinct_price.png)
 
 ### Завдання 4:
 
