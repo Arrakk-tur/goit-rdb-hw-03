@@ -47,10 +47,16 @@ SQL запити:
 - > Напишіть SQL команду, за допомогою якої можна обрати унікальні значення колонок category_id та price таблиці products. Оберіть порядок виведення на екран за спаданням значення price та виберіть тільки 10 рядків.
 
 - ```sql
-
+  SELECT DISTINCT
+      category_id, price
+  FROM
+      lection_them3.products
+  ORDER BY price
+  LIMIT 10;
   ```
 
-- **Screenshot:** p3\_
+- **Screenshot:**
+  - p3_distinct_price.png
 
 ### Завдання 4:
 
