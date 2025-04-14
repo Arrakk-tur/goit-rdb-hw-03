@@ -111,14 +111,13 @@ _p4_products_count.png_
 
 ---
 
-SELECT customer_id, COUNT(order_id) AS order_count, AVG(total_amount) AS avg_amount
-FROM orders
-GROUP BY customer_id;
-
 ```sql
-
+SELECT supplier_id, COUNT(id) AS products_count, AVG(price) AS avg_price
+FROM products
+GROUP BY supplier_id;
 ```
 
-\_p5\_
+_p5_products_group_by.png_
+![p5_products_group_by.png](./p5_products_group_by.png)
 
 ---
